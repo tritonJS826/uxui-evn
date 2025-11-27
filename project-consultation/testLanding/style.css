@@ -1,0 +1,46 @@
+/*  reset css */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 800px;
+    /* margin: top/bottom  left/right*/
+    margin: 0 auto;
+}
+
+header {
+
+}
+
+h1 {
+    background-color: 0;
+    box-sizing: 20px, 40px;
+}
+
+.welcome-img {
+    height: 500px;
+    width: 500px;
+}
+
+main {
+
+}
+
+h2 {
+    color: lightseagreen;
+}
+
+.paragraph {
+    /* padding: 2px; */
+    margin-top: 36px;
+}
+
+.habbit-list {
+    /* padding: 2px; */
+    margin-left: 36px;
+}
+
+footer {
+}
