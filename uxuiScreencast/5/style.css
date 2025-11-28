@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-light {
+    background-color: aliceblue;
+    color: #35358b;
+}
+
+
+.body-dark {
+    background-color: #35358b;
+    color: aliceblue;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 20px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-indent: 3ch;
+    margin: 18px 0;
+    text-align: justify;
+}

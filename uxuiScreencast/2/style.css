@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: red;
+    background-color: #12bda996;
+}
+
+main {
+    font-size: 30px;
+}
+
+p {
+    color: blue;
+}
+
+.first-paragraph {
+    color: green;
+}
+
+.secret {
+    font-size: 12px;
+}
+
+#paragraph-third {
+    background-color: yellow;
+}
+
+[type="reset"] {
+    background-color: aqua;
+    width: 200px;
+}
+
+footer {
+    background-color: blueviolet;
+}

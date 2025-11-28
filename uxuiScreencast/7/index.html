@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://google.com" method="post" class="form">
+    <h2>Купить в 1 клик</h2>
+
+    <hr class="separator">
+
+    <label for="name">Ф.И.О. <span class="red">*</span></label>
+    <input id="name" type="text" name="name" required class="input">
+
+    <label for="tel">Телефон <span class="red">*</span></label>
+    <input id="tel" type="tel" name="tel" required class="input">
+
+    <div class="agreement-wrapper">
+        <input type="checkbox" id="agreement">
+        <label for="agreement">Я согласен на <span class="red">обработку персональных данных</span></label>
+    </div>
+
+    <button type="submit" class="submit-button">Отправить</button>
+    </form>
+</body>
+</html>

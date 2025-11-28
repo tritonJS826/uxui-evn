@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Momo Signature Custom";
+    src: url("./fonts/MomoSignature-Regular.ttf") format("truetype");
+}
+
+
+.fancy {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Momo Signature", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fancy_for_index {
+    font-family: "Momo Signature Custom";
+    font-weight: 400;
+    font-style: normal;
+}

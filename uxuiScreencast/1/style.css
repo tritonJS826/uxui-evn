@@ -1,0 +1,13 @@
+header {
+    color: red;
+    background-color: #12bda996;
+}
+
+main {
+    color: blue;
+    font-size: 45px;
+}
+
+footer {
+    background-color: blueviolet;
+}

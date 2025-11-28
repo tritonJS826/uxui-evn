@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.fieldset-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.separator {
+    border: 2px solid rgb(184, 0, 0);
+    width: 100%;
+}
+
+.red {
+    color: rgb(184, 0, 0);
+}
+
+label {
+    color: #727272;;
+}
+
+.input {
+    padding: 6px 12px;
+    background-color: #e4e4e4;
+    border: 2px solid #a0a0a0;
+    border-radius: 4px;
+}
+
+.agreement-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.submit-button {
+    margin-top: 24px;
+    background-color: rgb(184, 0, 0);
+    padding: 16px 16px;
+    width: 100px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+}

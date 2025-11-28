@@ -1,0 +1,50 @@
+.parent {
+    width: 300px;
+    height: 300px;
+    background-color: #afaacc33;
+    overflow: hidden;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(117, 150, 80, 0.281);
+}
+
+.grandchild {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+.circle {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+
+.border-style {
+    width: 50%;
+    height: 30%;
+    background-color: blueviolet;
+    border: 2px double red;
+}
+
+.box-shadow {
+    width: 200px;
+    height: 200px;
+    background-color:chartreuse;
+    box-shadow: 9px 10px 5px 1px rgba(37,45,227,0.54);
+    -webkit-box-shadow: 9px 10px 5px 1px rgba(37,45,227,0.54);
+    -moz-box-shadow: 9px 10px 5px 1px rgba(37,45,227,0.54);
+}
