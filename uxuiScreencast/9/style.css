@@ -1,0 +1,39 @@
+.container {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: end;
+    align-content: start;
+}
+
+.child {
+    background-color: aqua;
+    /* width: 100px; */
+    /* min-width: 100px; */
+    /* height: 50px; */
+    border: 1px solid black;
+    /* margin: 5px; */
+    flex-grow: 1;
+}
+
+
+.small {
+    /* height: 30px; */
+    /* flex-grow: 0.5;
+    flex-basis: 100px; */
+    flex: 0.5 1 100px;
+}
+
+.medium {
+    /* height: 120px; */
+}
+
+.big {
+    /* height: 300px; */
+    flex-grow: 3;
+}
