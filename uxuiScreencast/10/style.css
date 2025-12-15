@@ -1,0 +1,63 @@
+.header {
+    position: static;
+    display: block;
+    background-color: blue;
+}
+
+.sticky-1 {
+    background-color: violet;
+    position: sticky;
+    top: 0;
+}
+
+.sticky-2 {
+    background-color: violet;
+    position: sticky;
+    top: 37px;
+}
+
+.sticky-3 {
+    background-color: violet;
+    position: sticky;
+    top: 0;
+}
+
+.text {
+    position: static;
+    display: inline;
+    background-color: blueviolet;
+}
+
+.parent {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    background-color: aqua;
+}
+
+.child-1 {
+    position: absolute;
+    z-index: 10;
+    right: calc(50% - 200px / 2);
+    bottom: calc(50% - 200px / 2);
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+.child-2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color:burlywood;
+}
+
+.always-visible {
+    position: fixed;
+    z-index: 20;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+}
