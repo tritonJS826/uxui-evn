@@ -1,0 +1,17 @@
+.header {
+    /* border-bottom: 1px solid black; */
+}
+
+.header::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    transform: rotate(-1deg);
+}
+
+.text::first-line {
+    color: blue;
+    font-weight: 800;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">test</div>
+
+    <div class="container">
+        <div class="firstChild">1</div>
+        <div class="seconChild">2</div>
+    </div>
+
+    <div class="container2">
+        <div class="firstChild2">1</div>
+        <div class="seconChild2">2</div>
+    </div>
+
+    <div class="container3">
+        <div class="firstChild3">1</div>
+        <div class="seconChild3">2</div>
+    </div>
+
+    <img
+        src="logo@1x.png"
+        srcset="logo@1x.png 1x, logo@2x.png 2x"
+        alt="Логотип"
+    >
+
+    <picture>
+        <!-- Для экранов шире 1024px грузим "десктопную" версию -->
+        <source media="(min-width: 1024px)" srcset="desktop-large.jpg">
+
+        <!-- Для планшетов (от 768px) грузим среднюю версию -->
+        <source media="(min-width: 768px)" srcset="tablet.jpg">
+
+        <!-- По умолчанию (для мобильных) и как запасной вариант -->
+        <img src="mobile-portrait.jpg" alt="Описание фото">
+    </picture>
+
+
+</body>
+</html>
