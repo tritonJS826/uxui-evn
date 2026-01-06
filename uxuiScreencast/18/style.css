@@ -1,0 +1,538 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero */
+#hero {
+    background: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Flying Stars Animation */
+.stars-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    color: #f1c40f;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
+    animation: flyStar 15s linear infinite;
+    opacity: 0;
+}
+
+.star-1 {
+    left: -5%;
+    top: 10%;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.star-2 {
+    left: -5%;
+    top: 25%;
+    animation-delay: 2s;
+    animation-duration: 14s;
+}
+
+.star-3 {
+    left: -5%;
+    top: 40%;
+    animation-delay: 4s;
+    animation-duration: 16s;
+}
+
+.star-4 {
+    left: -5%;
+    top: 55%;
+    animation-delay: 1s;
+    animation-duration: 13s;
+}
+
+.star-5 {
+    left: -5%;
+    top: 70%;
+    animation-delay: 3s;
+    animation-duration: 15s;
+}
+
+.star-6 {
+    left: -5%;
+    top: 15%;
+    animation-delay: 5s;
+    animation-duration: 17s;
+}
+
+.star-7 {
+    left: -5%;
+    top: 35%;
+    animation-delay: 7s;
+    animation-duration: 11s;
+}
+
+.star-8 {
+    left: -5%;
+    top: 50%;
+    animation-delay: 6s;
+    animation-duration: 18s;
+}
+
+.star-9 {
+    left: -5%;
+    top: 65%;
+    animation-delay: 8s;
+    animation-duration: 14s;
+}
+
+.star-10 {
+    left: -5%;
+    top: 80%;
+    animation-delay: 9s;
+    animation-duration: 16s;
+}
+
+@keyframes flyStar {
+    0% {
+        left: -5%;
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1) rotate(45deg);
+    }
+    90% {
+        opacity: 1;
+        transform: scale(1) rotate(45deg);
+    }
+    100% {
+        left: 110%;
+        opacity: 0;
+        transform: scale(0.5) rotate(90deg);
+    }
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+/* Sections */
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Team Section */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.team-member {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.team-member h3 {
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Stats Section */
+#stats {
+    background: #333;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Registration Page */
+.form-container {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group.checkbox input {
+    width: auto;
+}
+
+.form-group.checkbox label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+.registration-info {
+    margin-top: 40px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    margin-bottom: 5px;
+}
+
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.pricing-item {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.pricing-item h3 {
+    margin-bottom: 10px;
+}
+
+.pricing-item .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Cars Page */
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.car-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.car-image {
+    height: 200px;
+    background-color: #e0e0e0;
+    position: relative;
+}
+
+.car-image.sedan {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+}
+
+.car-image.suv {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+}
+
+.car-image.compact {
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+}
+
+.car-image.truck {
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+}
+
+.car-image.motorcycle {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.car-image.electric {
+    background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+}
+
+.car-details {
+    padding: 25px;
+}
+
+.car-details h3 {
+    margin-bottom: 5px;
+}
+
+.car-type {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.car-specs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.car-specs span {
+    background: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.85rem;
+}
+
+.car-description {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.car-features {
+    list-style: none;
+    padding: 0;
+}
+
+.car-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 20px;
+}
+
+.car-features li:last-child {
+    border-bottom: none;
+}
+
+.car-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Safety Features Section */
+#safety-features {
+    background: #f5f5f5;
+    margin-top: 50px;
+}
+
+.safety-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.safety-item {
+    text-align: center;
+    padding: 25px;
+}
+
+.safety-item h3 {
+    margin-bottom: 15px;
+    color: #333;
+}

@@ -1,0 +1,82 @@
+.parent-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+}
+
+.child-1 {
+    background-color: aquamarine;
+}
+
+
+.parent-2 {
+    display: grid;
+    grid-template-areas:
+        "superHeader superHeader superHeader"
+        "sidebar     content     content"
+        "footer      footer      footer";
+}
+
+@media (max-width: 600px) {
+    .parent-2 {
+        grid-template-areas:
+            "superHeader"
+            "sidebar"
+            "content"
+            "footer";
+    }
+}
+
+
+.header  { 
+    grid-area: superHeader;  
+    background: yellow;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: pink; 
+}
+
+.content {
+    grid-area: content;
+    background: red; 
+}
+
+.footer  {
+    grid-area: footer;
+    background: green;
+}
+
+.parent-3 {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.child-3 {
+    background-color: brown;
+    height: 200px;
+}
+
+.child-3.mini {
+    height: 100px;
+}
+
+
+
+
+.parent-4 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-flow: row dense;
+}
+
+.child-4 {
+    background-color: blanchedalmond;
+}
+
+.child-4.second {
+    grid-column: 4 / 6;
+}
