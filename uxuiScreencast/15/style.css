@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    column-gap: 20px;
+    row-gap: 12px;
+}
+
+
+
+.child-1 {
+    background-color: blue;
+    grid-column: 2 / 6;
+}
+
+.child-2 {
+    background-color: blueviolet;
+}
+
+.child-3 {
+    background-color: brown;
+}
+
+.child-4 {
+    background-color: rgb(71, 165, 42);
+    grid-column: 1 / 3;
+}
+
+.child-5 {
+    background-color: rgb(165, 42, 134);
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows:  250px 250px 250px 250px 250px;
+    }
+
+    .child-1 {
+        grid-column: 1 / -1;
+        grid-row: 1 ;
+    }
+
+    .child-2 {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .child-3 {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+
+    .child-4 {
+        grid-column: 1 / -1;
+        grid-row: 4;
+    }
+
+    .child-5 {
+        grid-column: 1 / -1;
+        grid-row: 5;
+    }
+}
+
+
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+
+.child-flex-1 {
+    background-color: blue;
+    width: calc(50%);
+    height: 250px;
+}
+
+.child-flex-2 {
+    background-color: blueviolet;
+    width: calc(25% - 20px);
+    height: 250px;
+}
+
+.child-flex-3 {
+    background-color: brown;
+    width: calc(25% - 20px);
+    height: 250px;
+}
+
+.child-flex-4 {
+    background-color: rgb(71, 165, 42);
+    height: 250px;
+    width: calc(75%)
+}
+
+.child-flex-5 {
+    background-color: rgb(165, 42, 134);
+    width: calc(25% - 20px);
+    height: 250px;
+}
+
+@media (max-width: 500px) {
+    .container-flex {
+        flex-direction: row;
+    }
+
+    .child-flex-1 {
+        background-color: blue;
+        width: 100%;
+        height: 250px;
+    }
+
+    .child-flex-2 {
+        background-color: blueviolet;
+        width: 100%;
+        height: 250px;
+    }
+
+    .child-flex-3 {
+        background-color: brown;
+        width: 100%;
+        height: 250px;
+    }
+
+    .child-flex-4 {
+        background-color: rgb(71, 165, 42);
+        height: 250px;
+        width: 100%;
+    }
+
+    .child-flex-5 {
+        background-color: rgb(165, 42, 134);
+        width: 100%;
+        height: 250px;
+    }
+}
