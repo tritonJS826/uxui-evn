@@ -1,0 +1,16 @@
+body {
+}
+
+.link {
+    
+}
+
+.link-internal {
+    color: rgb(173, 113, 2);
+}
+
+.link-external {
+    color: rgb(116, 113, 113);
+    /* text-decoration: dashed; */
+    text-decoration: underline solid rgb(116, 113, 113) 1px;
+}

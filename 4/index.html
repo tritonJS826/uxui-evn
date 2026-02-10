@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>UI Components Playground</h1>
+        <nav>
+            <a href="#section1">Buttons</a> |
+            <a href="#section2">Content</a> |
+            <a href="#form">Form</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h2>Buttons & Controls</h2>
+            <p>Interactive controls without styling:</p>
+            <button type="button">Primary Button</button>
+            <button type="button" disabled>Disabled Button</button>
+            <a href="https://example.com" target="_blank" rel="noopener">Example Link</a>
+
+            <div>
+                <label for="text">Text input</label>
+                <input id="text" type="text" placeholder="Enter text">
+            </div>
+
+            <div>
+                <input id="chk1" type="checkbox">
+                <label for="chk1">Checkbox</label>
+            </div>
+
+            <div>
+                <input id="r1" name="rad" type="radio">
+                <label for="r1">Radio 1</label>
+                <input id="r2" name="rad" type="radio">
+                <label for="r2">Radio 2</label>
+            </div>
+
+            <div>
+                <label for="select">Select</label>
+                <select id="select">
+                    <option>Option 1</option>
+                    <option selected>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="area">Textarea</label>
+                <textarea id="area" rows="3">Sample textarea</textarea>
+            </div>
+
+            <div>
+                <progress max="100" value="30"></progress>
+                <meter min="0" max="100" value="42">42%</meter>
+            </div>
+        </section>
+
+        <section id="section2">
+            <h2>Content Elements</h2>
+            <p>A paragraph with <strong>strong</strong>, <em>emphasis</em>, and <small>small</small> text.</p>
+            <blockquote cite="https://example.com">A sample blockquote for testing content layout.</blockquote>
+            <pre><code>// Sample code block
+console.log('hello world');
+</code></pre>
+
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="placeholder image">
+                <figcaption>Placeholder image</figcaption>
+            </figure>
+
+            <table>
+                <caption>Simple table</caption>
+                <thead>
+                    <tr><th>Header 1</th><th>Header 2</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cell A</td><td>Cell B</td></tr>
+                </tbody>
+            </table>
+
+            <dl>
+                <dt>Term</dt>
+                <dd>Definition of term.</dd>
+            </dl>
+
+            <details>
+                <summary>More details</summary>
+                <p>Hidden details content shown when expanded.</p>
+            </details>
+        </section>
+
+        <section id="form">
+            <h2>Forms</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <aside>
+            <h3>Aside</h3>
+            <p>Supplementary links:</p>
+            <ul>
+                <li><a href="#section1">Go to Buttons</a></li>
+                <li><a href="#form">Go to Form</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Footer — contact: <a href="mailto:me@example.com">me@example.com</a></p>
+    </footer>
+</body>
+</html>

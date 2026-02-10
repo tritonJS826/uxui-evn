@@ -38,10 +38,13 @@
 
 .mainHeader {
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    padding-bottom: 20px;
     font-family: "Barriecito", system-ui;
     font-weight: 400;
     font-style: normal;
+
+    /* border: 1px solid black; */
 }
 
 .mainContent {
