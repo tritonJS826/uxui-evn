@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="header">Contact us</h1>
+
+
+    <form action="POST" class="form">
+        <label class="label" for="name">Name:</label>
+        <input class="input" type="text" id="name" name="name" placeholder="Max or Viktar">
+
+        <label class="label" for="email">Email:</label>
+        <input class="input" type="email" id="email" name="email" placeholder="example@email.com">
+
+        <label class="label" for="message">Message:</label>
+        <textarea class="textarea" id="message" name="message" rows="5" cols="33">I want buy ....</textarea>
+
+        <fieldset class="fieldset" class="fieldset">
+            <legend>Payment method</legend>
+
+            <div>
+                <input type="radio" id="mastercard" name="payment-method" value="mastercard" checked />
+                <label for="mastercard">Mastercard</label>
+            </div>
+
+            <div>
+                <input type="radio" id="paypal" name="payment-method" value="paypal" />
+                <label for="paypal">Paypal</label>
+            </div>
+
+            <div>
+                <input type="radio" id="apple" name="payment-method" value="apple" />
+                <label for="apple">Apple pay</label>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="button">Submit</button>
+
+
+        <button type="button"></button>
+    </form>
+</body>
+</html>
