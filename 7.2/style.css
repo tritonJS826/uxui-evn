@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cardContainer {
+    background-color: lightsteelblue;
+    padding: 20px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid black;
+    /* max-width: 300px; */
+    /* width: 200px; */
+    /* min-width: 150px; */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardHeader {
+    text-align: center;
+}
+
+.cardBody {
+    text-align: center;
+}
