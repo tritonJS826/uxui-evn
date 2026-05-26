@@ -1,0 +1,58 @@
+.accordionItem {
+    background-color: bisque;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordionContent {
+    background-color: bisque;
+    box-sizing: border-box;
+    padding: 20px;
+    height: auto;
+    border: 1px solid black;
+    transition: all 1s linear;
+}
+
+.hidden {
+    padding: 0;
+    height: 0;
+    border: 0px solid black;
+    overflow: hidden;
+    transition: all 1s linear;
+}
+
+.slider {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.slide {
+    border: 1px solid red;
+    min-width: 400px;
+    height: 200px;
+}
+
+.slide-1 {
+    background-color: blue;
+    margin-left: 0px;
+}
+.slide-2 {
+    background-color: rgb(22, 149, 246);
+}
+.slide-3 {
+    background-color: rgb(59, 59, 249);
+}
+.slide-4 {
+    background-color: rgb(93, 93, 248);
+}
+.slide-5 {
+    background-color: rgb(136, 136, 247);
+}
+.slide-6 {
+    background-color: rgb(185, 185, 252);
+}
